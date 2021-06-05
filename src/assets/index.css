@@ -59,6 +59,9 @@ display: none;
 a{
   text-decoration: none;
 }
+.margin-Top{
+  margin-top: 40px;
+}
 /*.........Frame...............*/
 .Container-body{
   display: flex;
@@ -193,7 +196,7 @@ padding: 30px 15px 10px 15px;
 box-shadow: 2px 2px 20px 1px rgba(12, 12, 12, 0.151);
 }
 .NewBusinessPage-Card-wrapper:hover{
-border: 2px solid rgb(247, 108, 108);
+border: 2px solid rgb(241, 48, 87);
 }
 input[type="radio"]{
   margin: 0 5px 0 0;
@@ -207,7 +210,7 @@ input[type='radio']:checked:after {
         top: -2px;
         left: -1px;
         position: relative;
-        background-color: rgb(247, 108, 108);
+        background-color: rgb(241, 48, 87);
         content: '';
         display: inline-block;
         visibility: visible;
@@ -224,8 +227,8 @@ input[type='radio']:checked:after {
   padding: 10px 0;
   color: #fff;
   font-weight: 600;
-  background-color: rgb(247, 108, 108);
-  border: 1px solid rgb(247, 108, 108);
+  background-color: rgb(241, 48, 87);
+  border: 1px solid rgb(241, 48, 87);
   border-radius: 5px;
 }
 .next-button:hover{
@@ -263,7 +266,7 @@ input[type='radio']:checked:after {
 }
 .Dashboard--content-wrapper{
   flex: 9.5;
-  background-color: rgba(206, 206, 206, 0.342);
+  background-color: rgba(223, 243, 252, 0.295);
 }
 .Dashboard--sideNav-profile-wrapper{
   padding: 20px 30px;
@@ -279,7 +282,7 @@ input[type='radio']:checked:after {
   margin-bottom: 3px;
 }
 .Dashboard--sideNav-drop-icon{
-  background-color: rgb(245, 245, 245);
+  background-color: rgba(223, 243, 252, 0.295);
   border-radius: 5px;
   padding: 7px;
   font-size: 18px;
@@ -307,7 +310,7 @@ input[type='radio']:checked:after {
   font-weight: bold;
 }
 .Dashboard--TopNav-wrapper{
-  padding: 30px 50px;
+  padding: 20px 50px;
   background-color: #ffffff;
 }
 .profile-pic{
@@ -315,7 +318,7 @@ input[type='radio']:checked:after {
   border-radius: 100px;
 }
 .Dashboard--TopNav-notification{
-  border: 1px solid rgba(66, 66, 66, 0.438);
+  border: 1.6px solid rgba(66, 66, 66, 0.438);
   border-radius: 5px;
   padding: 4px;
   margin: 0 15px 0 0;
@@ -344,12 +347,12 @@ padding: 30px 50px;
   margin-bottom: 10px;
 }
 .Dasboard--welcome-last-seen span{
-  color: rgb(247, 108, 108);
-  border-bottom: 2px solid rgb(247, 108, 108);
+  color: rgb(241, 48, 87);
+  border-bottom: 2px solid rgb(241, 48, 87);
 }
 .Dasboard--welcome-button{
-  background-color: rgb(247, 108, 108);
-  border: 1px solid rgb(247, 108, 108);
+  background-color: rgb(241, 48, 87);
+  border: 1px solid rgb(241, 48, 87);
   padding: 10px 30px;
   color: #fff;
   font-weight: bolder;
@@ -358,33 +361,40 @@ padding: 30px 50px;
 }
 .Dasboard--welcome-button:hover{
   background-color: #fff;
-  color: rgb(247, 108, 108);
+  color: rgb(241, 48, 87);
   cursor: pointer;
 }
+.Dasboard--Top-card-wrapper{
+  margin-top: 20px;
+}
 .Dasboard--Top-card1{
-  margin: 5px 5px 5px 0;
+  margin: 5px 15px 10px 0;
   flex: 1;
 padding: 10px;
 border-radius: 7px;
 box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
+background-color: #ffffff;
 }
 .Dasboard--Top-card2{
-  margin: 5px 0 5px 5px;
+  margin: 5px 0 10px 15px;
   flex: 1;
 padding: 10px;
 border-radius: 7px;
 box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
+background-color: #ffffff;
 }
 .Dasboard--Top-card-type{
 font-weight: bold;
-text-transform: uppercase;
 margin-bottom: 3px;
 }
 .Dasboard--Top-bank{
 text-transform: uppercase;
 margin-bottom: 3px;
+color: grey;
+font-size: 12px;
+font-weight: bold;
 }
 .Dasboard--Top-amount{
   margin-top: 40px;
@@ -397,16 +407,17 @@ margin-bottom: 3px;
 border: none;
 font-size: 16px;
 padding: 7px;
-background-color: #bebebe96;
+background-color: rgba(161, 82, 235, 0.329);
 border-radius: 100px;
+color: rgba(161, 82, 235, 0.918);
 }
 .Dasboard--Top-card-icon-active{
 border: none;
 font-size: 16px;
 padding: 7px;
-background-color: #0686402f;
+background-color: #739aee2f;
 border-radius: 100px;
-color: #10c96373;
+color: rgb(6, 132, 190);
 }
 .Dashboard--sideNav-close-icon{
   display: none;
@@ -414,6 +425,47 @@ color: #10c96373;
 .profile-margin{
   margin: 0 5px;
 }
+
+
+
+.Dashboard--Table-card{
+  flex: 7;
+    margin: 5px 15px 10px 0;
+padding: 10px;
+border-radius: 7px;
+box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+font-size: 14px;
+background-color: #ffffff;
+}
+.Dashboard--Table-overflow-card{
+  flex: 5;
+  margin: 5px 0 10px 15px;
+padding: 10px;
+border-radius: 7px;
+box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+font-size: 14px;
+background-color: #ffffff;
+}
+.Dashboard--overflow-icon{
+background-color: rgb(243, 115, 136);
+color: #ffffff;
+border-radius: 3px;
+padding: 3px 5px;
+margin-right: 7px;
+}
+.Cashflow-body{
+  flex: 1;
+}
+.Cashflow-body-name{
+  color: grey;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.Cashflow-body-amount{
+  font-size: 13px;
+  font-weight: bolder;
+}
+
 
 
 
@@ -431,9 +483,20 @@ color: #10c96373;
   /* .Dashboard--sideNav-wrapper{
     display: none;
   } */
+  .Dasboard--welcome-button{
+    margin: 10px 0;
+  }
+  .dashboard-bacground:hover{
+  background-color: #0e0e0eaf;
+}
+  .Dashboard--sideNav-profile-name{
+    color: rgb(221, 221, 221);
+    font-weight: bolder;
+  }
   .Dashboard--sideNav-close-icon{
     font-size: 24px;
     display: inline-block;
+    color: rgba(179, 179, 179, 0.918);
   }
   .Dashboard--sideNav-wrapper.close-nav {
             position: fixed;
@@ -443,7 +506,7 @@ color: #10c96373;
             height: 100%;
              width: 50%;
   transition: all .9s ease;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.274);
         }
         .Dashboard--sideNav-wrapper.open-nav{
             position: fixed;
@@ -454,7 +517,7 @@ color: #10c96373;
             height: 100%;
              width: 100%;
             transition: all .5s ease;
-            background-color: #fff;
+            background-color: rgb(41, 41, 41);
         }
 .mini-logo{
   display: flex;
@@ -474,7 +537,7 @@ color: #10c96373;
 .Dasboard--welcome-message{
   font-size: 1.4rem;
 }
-.Dasboard--Top-card1, .Dasboard--Top-card2{
+.Dasboard--Top-card1, .Dasboard--Top-card2, .Dashboard--Table-card, .Dashboard--Table-overflow-card{
  flex: 100%;
  margin: 10px 0;
 }

@@ -32,7 +32,7 @@ function SideNav({ CloseMenu, open }) {
             </Link>
             <Link exact to="/">
                 <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="radix-icons:dashboard" data-inline="false"></span></div>
+                    <div><span className="iconify nav-icon" data-icon="la:file-invoice" data-inline="false"></span></div>
                     <div className="nav-name">Invoice</div>
                 </div>
             </Link>
