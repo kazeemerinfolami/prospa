@@ -111,14 +111,39 @@ margin: 10px 0;
 font-weight: 600;
 }
 
+/*......... Drop Down Bar ...........*/
 
+.dropDown-wrapper{
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  padding: 10px;
+}
+.dropDown-content-wrapper{
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 20px 1px rgba(12, 12, 12, 0.151);
+  font-size: 13px;
+  border-radius: 10px;
+}
+.dropDown-content-name{
+  border-bottom: 1px solid #d1d1d159;
+  font-weight: bolder;
+  padding: 10px;
+}
+.dropDown-content-business{
+padding: 10px;
+}
+.dropDown-content-add{
+  color: rgb(241, 48, 87);
+  padding: 5px 10px 10px 10px;
+}
 /*...... Side bar Image ........*/
 
 .side-bar-image-container{
   margin-top: 50%;
   position: relative;
   display: inline-block;
- 
 }
 
 .BankVault-img{
@@ -294,6 +319,9 @@ input[type='radio'].radio-input:checked:after {
   font-size: 18px;
   border: none;
   color: #A6ABB2;
+}
+.Dashboard--sideNav-drop-icon:hover{
+  background-color: rgba(188, 226, 243, 0.445);
 }
 .nav-card{
   color:#A6ABB2;
@@ -558,6 +586,9 @@ font-weight: 600px;
 z-index: 10;
 }
 .form__input:focus{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   border-bottom: 4px solid;
   border-image:  linear-gradient(86deg, rgba(174,53,199,1) 21%, rgba(85,101,215,0.5396533613445378) 50%, rgba(54,27,130,0.09707633053221287) 81%) 50;
 }
