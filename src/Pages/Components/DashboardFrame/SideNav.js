@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileIMG from "../../../assets/Images/e4bbd3d6b48da2d7688840a0416cf62e5baaad90.png"
-import { Link } from "react-router-dom"
+import Links from './Links'
+
 
 function SideNav({ CloseMenu, open }) {
     return (
@@ -24,36 +25,7 @@ function SideNav({ CloseMenu, open }) {
                 </div>
 
             </div>
-            <Link exact to="/dashboard">
-                <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="radix-icons:dashboard" data-inline="false"></span></div>
-                    <div className="nav-name">Dashboard</div>
-                </div>
-            </Link>
-            <Link exact to="/">
-                <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="la:file-invoice" data-inline="false"></span></div>
-                    <div className="nav-name">Invoice</div>
-                </div>
-            </Link>
-            <Link exact to="/">
-                <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="radix-icons:dashboard" data-inline="false"></span></div>
-                    <div className="nav-name">Management</div>
-                </div>
-            </Link>
-            <Link exact to="/login">
-                <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="radix-icons:dashboard" data-inline="false"></span></div>
-                    <div className="nav-name">Security</div>
-                </div>
-            </Link>
-            <Link exact to="/">
-                <div className="flex-content nav-card dashboard-bacground">
-                    <div><span className="iconify nav-icon" data-icon="radix-icons:dashboard" data-inline="false"></span></div>
-                    <div className="nav-name">Support</div>
-                </div>
-            </Link>
+            <Links />
             <div className="Dashboard--SideNav-footer">prospa</div>
         </div>
     )

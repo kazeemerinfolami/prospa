@@ -1,21 +1,36 @@
 import React from 'react'
-import { Line } from "react-chartjs-2"
+// import { Line } from "react-chartjs-2"
+import { Line } from 'rc-progress';
 
 export function CashflowCardvisualization() {
-    const Data = {
-        labels: ["jan", "fed", "mar", "may"],
-        dataSets: [
-            {
-                label: "Sales for 2020",
-                data: [12, 45, 34, 56]
-            }
-        ]
-    }
+    // const Data = {
+    //     labels: ["jan", "fed", "mar", "may"],
+    //     dataSets: [
+    //         {
+    //             label: "Sales for 2020",
+    //             data: [12, 45, 34, 56]
+    //         }
+    //     ]
+    // }
     return (
-        <div className="Dashboard--Table-card chart-wrapper">
+        <div className="Dashboard--Table-card VisualizationCard">
             <div className="Dasboard--Top-card-type">January summary</div>
+            <div className="flex-content mini-top-margin">
+                <div className="chart-content-wrapper">
+                    <div className="chart-content-name">Money in</div>
+                    <div className="chart-content-amount">N5,600,000</div>
+                </div>
+                <div className="chart-content-wrapper">
+                    <div className="chart-content-name">Money out</div>
+                    <div className="chart-content-amount">N5,600,000</div>
+                </div>
+                <div className="chart-content-wrapper">
+                    <div className="chart-content-name">Difference</div>
+                    <div className="chart-content-amount">N5,600,000</div>
+                </div>
+            </div>
             <div>
-                <Line data={Data} />
+                {/* <Line data={Data} /> */}
             </div>
         </div>
     )
@@ -24,7 +39,7 @@ export function CashflowCardvisualization() {
 
 export function CashflowCard() {
     return (
-        <div className="Dashboard--Table-overflow-card">
+        <div className="Dashboard--Table-overflow-card VisualizationCard">
             <div className="Dasboard--Top-card-type">Cash outflow</div>
             <div className="margin-Top">
                 <div className="flex-content mini-bottom-margin">
@@ -34,7 +49,7 @@ export function CashflowCard() {
                     </div>
                     <div className="Cashflow-body">
                         <div className="Cashflow-body-amount">-N234,567</div>
-                        <div>bar</div>
+                        <div><Line percent="10" strokeWidth="4" strokeColor="#f7cb09dc" /></div>
                     </div>
                 </div>
                 <div className="flex-content mini-bottom-margin">
@@ -44,7 +59,7 @@ export function CashflowCard() {
                     </div>
                     <div className="Cashflow-body">
                         <div className="Cashflow-body-amount">-N234,567</div>
-                        <div>bar</div>
+                        <div><Line percent="90" strokeWidth="4" strokeColor="#f7cb09dc" /></div>
                     </div>
                 </div>
                 <div className="flex-content mini-bottom-margin">
@@ -54,7 +69,7 @@ export function CashflowCard() {
                     </div>
                     <div className="Cashflow-body">
                         <div className="Cashflow-body-amount">-N234,567</div>
-                        <div>bar</div>
+                        <div><Line percent="30" strokeWidth="4" strokeColor="#f7cb09dc" /></div>
                     </div>
                 </div>
                 <div className="flex-content mini-bottom-margin">
@@ -64,7 +79,7 @@ export function CashflowCard() {
                     </div>
                     <div className="Cashflow-body">
                         <div className="Cashflow-body-amount">-N234,567</div>
-                        <div>bar</div>
+                        <div><Line percent="100" strokeWidth="4" strokeColor="#f7cb09dc" /></div>
                     </div>
                 </div>
             </div>

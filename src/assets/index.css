@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 16px; 
 }
 *, ::before, ::after{
   box-sizing: border-box;
@@ -15,6 +15,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 /*........... General ......*/
@@ -56,8 +59,9 @@ align-items: center;
 display: none;
 }
 .mini-bottom-margin{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
+
 a{
   text-decoration: none;
 }
@@ -263,7 +267,7 @@ input[type='radio'].radio-input:checked:after {
 }
 .Dashboard--sideNav-wrapper{
   flex: 2.5;
-  box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.2);
   position: relative;
 }
 .Dashboard--content-wrapper{
@@ -372,18 +376,18 @@ padding: 30px 50px;
 .Dasboard--Top-card1{
   margin: 5px 15px 10px 0;
   flex: 1;
-padding: 10px;
+padding: 20px;
 border-radius: 7px;
-box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
 background-color: #ffffff;
 }
 .Dasboard--Top-card2{
   margin: 5px 0 10px 15px;
   flex: 1;
-padding: 10px;
+padding: 20px;
 border-radius: 7px;
-box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
 background-color: #ffffff;
 }
@@ -433,18 +437,18 @@ color: rgb(6, 132, 190);
 .Dashboard--Table-card{
   flex: 7;
     margin: 5px 15px 10px 0;
-padding: 10px;
+padding: 30px 20px;
 border-radius: 7px;
-box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
 background-color: #ffffff;
 }
 .Dashboard--Table-overflow-card{
   flex: 5;
   margin: 5px 0 10px 15px;
-padding: 10px;
+padding: 30px 20px;
 border-radius: 7px;
-box-shadow: 2px 2px 10px 2px rgba(56, 56, 56, 0.2);
+box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.2);
 font-size: 14px;
 background-color: #ffffff;
 }
@@ -453,6 +457,9 @@ color: #ffffff;
 border-radius: 3px;
 padding: 3px 5px;
 margin-right: 7px;
+}
+.VisualizationCard{
+  height: 300px;
 }
 
 .Cashflow-body{
@@ -479,8 +486,21 @@ background-color: rgb(98, 226, 226);
 .Dashboard--transfer-icon{
   background-color: rgb(110, 240, 149);
 }
-.chart-wrapper{
-  width: 100%;
+.chart-content-name{
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(143, 143, 143);
+}
+.chart-content-amount{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.chart-content-wrapper{
+  flex: 1;
+}
+.mini-top-margin{
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 /*............ FORM ...........*/
 
@@ -541,6 +561,7 @@ z-index: 10;
   border-bottom: 4px solid;
   border-image:  linear-gradient(86deg, rgba(174,53,199,1) 21%, rgba(85,101,215,0.5396533613445378) 50%, rgba(54,27,130,0.09707633053221287) 81%) 50;
 }
+
 
 
 /*....... DashBoard Media Query ......*/
