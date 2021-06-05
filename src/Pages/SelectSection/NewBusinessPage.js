@@ -19,7 +19,7 @@ function NewBusinessPage() {
                         <div className="NewBusinessPage-Card-wrapper">
                             <div className="flex-content mini-bottom-margin">
                                 <div>
-                                    <input type="radio" id="Choice1"
+                                    <input type="radio" className="radio-input" id="Choice1"
                                         name="contact" value="" />
                                 </div>
                                 <div>
@@ -45,7 +45,7 @@ function NewBusinessPage() {
                         <div className="NewBusinessPage-Card-wrapper">
                             <div className="flex-content mini-bottom-margin">
                                 <div>
-                                    <input type="radio" id="Choice2"
+                                    <input type="radio" className="radio-input" id="Choice2"
                                         name="contact" value="" />
                                 </div>
                                 <div>
@@ -71,7 +71,7 @@ function NewBusinessPage() {
                         <div className="NewBusinessPage-Card-wrapper">
                             <div className="flex-content mini-bottom-margin">
                                 <div>
-                                    <input type="radio" id="Choice3"
+                                    <input type="radio" className="radio-input" id="Choice3"
                                         name="contact" value="" />
                                 </div>
                                 <div>
