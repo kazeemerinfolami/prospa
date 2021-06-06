@@ -35,7 +35,7 @@ function NewBusinessPage() {
                                         </label>
                                 </div>
                             </div>
-                            {openBox == "1" ? (
+                            {openBox === "1" ? (
                                 <div>
                                     <div className="content-title-sub mini-bottom-margin" >As a registered business you will get</div>
                                     <div className="flex-content mini-bottom-margin">
@@ -65,7 +65,7 @@ function NewBusinessPage() {
                                         </label>
                                 </div>
                             </div>
-                            {openBox == "2" ? (
+                            {openBox === "2" ? (
                                 <div>
                                     <div className="content-title-sub mini-bottom-margin" >As a registered business you will get</div>
                                     <div className="flex-content mini-bottom-margin">
@@ -95,7 +95,7 @@ function NewBusinessPage() {
                                         </label>
                                 </div>
                             </div>
-                            {openBox == "3" ? (
+                            {openBox === "3" ? (
                                 <div>
                                     <div className="content-title-sub mini-bottom-margin" >As a registered business you will get</div>
                                     <div className="flex-content mini-bottom-margin">
