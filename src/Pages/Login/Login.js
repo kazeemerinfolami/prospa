@@ -12,8 +12,8 @@ function Login() {
             sideNav_background_color="Container-Nav-Wrapper sideNav-Boacground-color2"
         >
             <div className="Form-container">
-                <div className="flex-center bold-text mini-logo">Prospa</div>
-                <div className="bold-text content-title">Welcome back to Prospa</div>
+                <div className="flex-center bold-text mini-logo">prospa</div>
+                <div className="bold-text content-title">Welcome back to prospa</div>
                 <div className="content-title-sub">An account, with powerful, personalised tools all in one place </div>
                 <Form />
             </div>

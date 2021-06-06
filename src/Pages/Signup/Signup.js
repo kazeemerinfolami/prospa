@@ -12,7 +12,7 @@ function Signup() {
             sideNav_background_color="Container-Nav-Wrapper sideNav-Boacground-color"
         >
             <div className="Form-container">
-                <div className="flex-center bold-text mini-logo">Prospa</div>
+                <div className="flex-center bold-text mini-logo">prospa</div>
                 <div className="bold-text content-title">Create your account</div>
                 <div className="content-title-sub">A short description about account types </div>
                 <Form />

@@ -8,7 +8,7 @@ function TopBar({ pageName, openMenu }) {
             <div className="flex-content">
                 <div className="Dashboard--TopNav-notification"><span className="iconify " data-icon="ic:baseline-notifications" data-inline="false"></span></div>
                 <div><img className="profile-pic" src={ProfileIMG} alt="profile-pic" /></div>
-                <div className="hambuger" onClick={openMenu}><span className="iconify" data-icon="ic:round-dashboard-customize" data-inline="false"></span></div>
+                <div className="hambuger" onClick={openMenu}><span className="iconify" data-icon="subway:menu" data-inline="false"></span></div>
             </div>
         </div>
     )

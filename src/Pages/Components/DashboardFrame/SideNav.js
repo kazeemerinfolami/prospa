@@ -5,8 +5,6 @@ import Links from './Links'
 
 function SideNav({ CloseMenu, open }) {
     const [openDropDown, setOpenDropDown] = useState(false)
-
-    console.log(openDropDown)
     const HandleDropdown = () => {
         setOpenDropDown(true)
     }
@@ -44,7 +42,7 @@ function SideNav({ CloseMenu, open }) {
                     </div>)
                 }
             </div>
-            <Links />
+            <Links SideopenDropDown={openDropDown} />
             <div className="Dashboard--SideNav-footer">prospa</div>
         </div>
     )
