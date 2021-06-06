@@ -4,7 +4,7 @@ import BodyFrame from '../../component/BodyFrame'
 
 function NewBusinessPage() {
 
-    const [openBox, setOpenBox] = useState("")
+    const [openBox, setOpenBox] = useState("1")
     const handleChange = (e) => {
         setOpenBox(e.target.value)
     }
@@ -23,7 +23,7 @@ function NewBusinessPage() {
                 <div className="content-title-sub">A short description comes here </div>
                 <form>
                     <div>
-                        <div className="NewBusinessPage-Card-wrapper">
+                        <div className={openBox === "1" ? "NewBusinessPage-Card-wrapper NewBusinessPage-Card-wrapperactive" : "NewBusinessPage-Card-wrapper"}>
                             <div className="flex-content mini-bottom-margin">
                                 <div>
                                     <input type="radio" className="radio-input" id="Choice1"
@@ -53,7 +53,7 @@ function NewBusinessPage() {
                                 </div>
                             ) : ""}
                         </div>
-                        <div className="NewBusinessPage-Card-wrapper">
+                        <div className={openBox === "2" ? "NewBusinessPage-Card-wrapper NewBusinessPage-Card-wrapperactive" : "NewBusinessPage-Card-wrapper"}>
                             <div className="flex-content mini-bottom-margin">
                                 <div>
                                     <input type="radio" className="radio-input" id="Choice2"
@@ -83,7 +83,7 @@ function NewBusinessPage() {
                                 </div>
                             ) : ""}
                         </div>
-                        <div className="NewBusinessPage-Card-wrapper">
+                        <div className={openBox === "3" ? "NewBusinessPage-Card-wrapper NewBusinessPage-Card-wrapperactive" : "NewBusinessPage-Card-wrapper"}>
                             <div className="flex-content mini-bottom-margin">
                                 <div>
                                     <input type="radio" className="radio-input" id="Choice3"
